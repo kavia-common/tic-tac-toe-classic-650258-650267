@@ -1,0 +1,23 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        // Placeholder buildscript; no real plugins to avoid resolution
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.24")
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+    }
+}
+
+task assembleDebug {
+    doLast {
+        println "Placeholder assembleDebug task completed. Use Expo prebuild for real builds."
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "tic-tac-toe-root",
+  "private": true,
+  "scripts": {
+    "gradle:bootstrap-and-run": "bash .prepare-ci.sh && ./gradlew assembleDebug || bash run-gradle.sh assembleDebug"
+  }
+}

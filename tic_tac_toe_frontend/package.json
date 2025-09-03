@@ -9,7 +9,9 @@
     "web": "expo start --web",
     "lint": "eslint .",
     "prebuild:android": "expo prebuild --platform android",
-    "build": "npm run prebuild:android && cd android && ./gradlew assembleDebug"
+    "postinstall": "chmod +x android/gradlew || true",
+    "build": "npm run prebuild:android && cd android && chmod +x ./gradlew && ./gradlew assembleDebug",
+    "gradle:check": "cd android && chmod +x ./gradlew && ./gradlew assembleDebug"
   },
   "dependencies": {
     "@expo/metro-runtime": "~5.0.4",

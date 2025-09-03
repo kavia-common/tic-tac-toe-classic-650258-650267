@@ -1,0 +1,9 @@
+# Ensure shell scripts keep LF endings and executable attribute where applicable
+*.sh text eol=lf
+gradlew text eol=lf eol=lf
+tic_tac_toe_frontend/android/gradlew text eol=lf
+gradlew.bat text eol=crlf
+tic_tac_toe_frontend/android/gradlew.bat text eol=crlf
+# Mark executables
+gradlew -text -diff -merge linguist-generated
+tic_tac_toe_frontend/android/gradlew -text -diff -merge linguist-generated

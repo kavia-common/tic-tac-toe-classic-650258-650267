@@ -1,0 +1,11 @@
+{
+  "name": "tic-tac-toe-monorepo",
+  "private": true,
+  "workspaces": [
+    "tic_tac_toe_frontend"
+  ],
+  "scripts": {
+    "postinstall": "chmod +x ./gradlew || true && chmod +x tic_tac_toe_frontend/android/gradlew || true",
+    "gradle:check": "./gradlew assembleDebug || (cd tic_tac_toe_frontend && npm run gradle:check)"
+  }
+}
